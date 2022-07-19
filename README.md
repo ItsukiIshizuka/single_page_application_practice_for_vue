@@ -15,6 +15,7 @@
   - (解決) `/build/webpack.base.conf.js:25` entryの中で指定されている
     - `app: './src/main.js'` の記述を `./src/app.js` に書き換えるとビルド失敗する
     - `./src/app.js` を新たに作成し、app.js内に`console.log('HEY')` と記述したところコンソールにHEYが表示されることを確認
+    - [上記の手順を試したコミット(不要な変更/ファイルは現在削除済み)](https://github.com/ItsukiIshizuka/single_page_application_practice_for_vue/commit/4960beecb6bf1d12dd166b18971b5848229e31dc)
 
 ## 記事の手順との相違点
 - nodebrewによるnpmのインストールを行う箇所があるが、筆者はnvmを使用(以前から使用していたため)
