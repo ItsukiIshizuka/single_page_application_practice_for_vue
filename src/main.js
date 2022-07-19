@@ -8,8 +8,8 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
+  el: '#test',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>' // <App></App>と同じことをしている(上のcomponents:{App}を呼び出している)
 })
