@@ -9,6 +9,12 @@
 - 不明点などを学習し、その過程をREADMEにまとめる
 
 ## 不明点と解決
+- `/src/main.js` はどこで呼び出しているのか？
+  - `index.html` で読み込まれている `main.js` があるが、`index.html` に scriptを呼び出す記述はない
+  - プロジェクト作成時にデフォルトで上記の記述になっていたため、`main.js` がどこで呼び出されているのかわからなかった
+  - (解決) `/build/webpack.base.conf.js:25` entryの中で指定されている
+    - `app: './src/main.js'` の記述を `./src/app.js` に書き換えるとビルド失敗する
+    - `./src/app.js` を新たに作成し、app.js内に`console.log('HEY')` と記述したところコンソールにHEYが表示されることを確認
 
 ## 記事の手順との相違点
 - nodebrewによるnpmのインストールを行う箇所があるが、筆者はnvmを使用(以前から使用していたため)
