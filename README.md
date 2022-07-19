@@ -1,5 +1,19 @@
 # single_page_application_practice
 
+## 概要
+以下の記事を参考に、Vueで簡単なSPAを作成する<br>
+[【Vue.js】爆速でSPAを作る](https://qiita.com/nagimaruxxx/items/8fc59a5ca05bb91bfe1f)
+
+## 内容
+- VueでSPAの作成
+- 不明点などを学習し、その過程をREADMEにまとめる
+
+## 不明点と解決
+
+## 記事の手順との相違点
+- nodebrewによるnpmのインストールを行う箇所があるが、筆者はnvmを使用(以前から使用していたため)
+
+
 > A Vue.js project
 
 ## Build Setup
