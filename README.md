@@ -16,6 +16,16 @@
     - `app: './src/main.js'` の記述を `./src/app.js` に書き換えるとビルド失敗する
     - `./src/app.js` を新たに作成し、app.js内に`console.log('HEY')` と記述したところコンソールにHEYが表示されることを確認
     - [上記の手順を試したコミット(不要な変更/ファイルは現在削除済み)](https://github.com/ItsukiIshizuka/single_page_application_practice_for_vue/commit/4960beecb6bf1d12dd166b18971b5848229e31dc)
+    - [参照](https://stackoverflow.com/questions/42749973/what-does-the-mean-inside-an-import-path)
+- `./src/main.js:14` `template:'<App/>'` は何を表しているのか？
+  - そもそもtemplateプロパティの使われ方がわからなかった
+  - (解決) 単一ファイルコンポーネントの `<template>` と同じもの
+    - 単一ファイルコンポーネントからVueを学んでしまったため基本的な使い方がわからなかった
+    - `el:'#test'` に対して `<App/>` を表示する
+  -  `<App/>` は何を表しているのか
+  - (解決) `components:{App}` コンポーネントを呼び出している
+    - `<App></App>` と記述しているのと同じ意味となる
+    - コンポーネントは呼び出し名を決めることができるが、決めない場合はコンポーネント名と同じ呼び出し名になる(今回の場合は `components:{App}` なので `App` が呼び出し名となる)
 
 ## 記事の手順との相違点
 - nodebrewによるnpmのインストールを行う箇所があるが、筆者はnvmを使用(以前から使用していたため)
