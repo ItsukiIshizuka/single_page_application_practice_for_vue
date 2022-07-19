@@ -1,6 +1,9 @@
 <template>
   <div id="hoge">
     <img src="./assets/logo.png">
+    <router-link to="/">top</router-link>
+    <router-link to="/about">about</router-link>
+    <router-link to="/info">info</router-link>
     <router-view/>
   </div>
 </template>

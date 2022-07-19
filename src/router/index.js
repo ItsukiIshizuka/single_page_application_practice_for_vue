@@ -16,9 +16,9 @@
 
 import Vue from 'vue'
 import Router from 'vue-router'
-import page1 from '@/components/page1'
-import page2 from '@/components/page2'
-import page3 from '@/components/page3'
+import top from '@/components/top'
+import about from '@/components/about'
+import info from '@/components/info'
 
 Vue.use(Router)
 
@@ -26,15 +26,15 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: page1
+      component: top
     },
     {
-      path: '/page2',
-      component: page2
+      path: '/about',
+      component: about
     },
     {
-      path: '/page3',
-      component: page3
+      path: '/info',
+      component: info
     }
   ]
 })
