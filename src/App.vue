@@ -1,10 +1,16 @@
 <template>
   <div id="hoge">
-    <img src="./assets/logo.png">
-    <router-link to="/">top</router-link>
-    <router-link to="/about">about</router-link>
-    <router-link to="/info">info</router-link>
-    <router-view/>
+    <div class="image">
+      <img src="./assets/logo.png">
+    </div>
+    <div class="link">
+      <router-link to="/">top</router-link>
+      <router-link to="/about">about</router-link>
+      <router-link to="/info">info</router-link>
+    </div>
+    <div class="content">
+      <router-view/>
+    </div>
   </div>
 </template>
 
